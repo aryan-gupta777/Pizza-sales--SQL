@@ -1,0 +1,5 @@
+-- Calculate the total revenue generated from pizza sales.
+
+select round(sum(order_details.quantity*pizzas.price),2) as SALES 
+from order_details join pizzas
+on order_details.pizza_id=pizzas.pizza_id;
