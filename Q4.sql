@@ -1,6 +1,0 @@
--- Identify the most common pizza size ordered.
-
-select pizzas.size,count(order_details.pizza_id*order_details.quantity) as total_orders from 
-pizzas join order_details
-on pizzas.pizza_id=order_details.pizza_id
-group by pizzas.size limit 1;
