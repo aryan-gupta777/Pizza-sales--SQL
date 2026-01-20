@@ -1,0 +1,4 @@
+# Ensure SQL files are detected as SQL and not treated as vendored/generated
+*.sql linguist-language=SQL
+*.sql linguist-vendored=false
+*.sql linguist-generated=false
